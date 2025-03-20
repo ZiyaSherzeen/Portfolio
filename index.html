@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+    <nav id="desktop-nav">
+         <div class="logo">Ziya Sherzeen</div>
+         <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+         </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Ziya Sherzeen</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/zishintro.jpg"alt="Ziya Sherzeen profile picture/" class="pic">
+        </div>
+        <div class="section__text">
+            <p class="section_text_p1">Hello,I'm </p>
+            <h1 class="title">Ziya Sherzeen</h1>
+            <p class="section__text__p2">Artificial Intelligence and Data Science Engineer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2"onclick="window.open('./assets/Ziya sherzeen resume.pdf')">Resume</button>
+                <button class="btn btn-color-1"onclick="location.href='./#contact'">Contact Info</button>
+        </div>
+        <div id="socials-container">
+            <img src="./assets/linkedin.jpg" alt="My LinkedIn Profile"
+            class="icon" onclick="location.href='https://linkedin.com/in/ziya-sherzeen'"/>
+            <img src="./assets/githubpng.png" alt="My Github Profile"
+            class="icon" onclick="location.href='https://github.com/ZiyaSherzeen'"/>
+        </div>
+        </div>
+        <img src="./assets/arrow.jpg" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#about'"/>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More </p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/zish3.jpg" alt="Profile picture" class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/skills" alt="skills icon"
+                    class="icon"/>
+                    <h3>Expertise</h3>
+                    <p>Problem Solving<br />Machine Learning<br />Web Development</p>
+                    
+                </div>
+                <div class="details-container">
+                    <img src="./assets/edu.png" alt="Education icon"
+                    class="icon"/>
+                    <h3>Education</h3>
+                    <p>B.Tech<br /> Artificial Intelligence and Data Science Engineer</p>    
+                </div>
+            </div>
+            <div class="text-container">
+                <p>
+                    I am a dedicated AI & Data Science Engineer currently pursuing a B.Tech in Artificial Intelligence and Data Science at Karpagam Institute of Technology, with a strong academic record and a CGPA of 8.3. My expertise lies in Python, Java, SQL, and MongoDB, and I actively engage in coding challenges on platforms such as LeetCode, GeeksforGeeks, and HackerRank. I have also participated in various competitions and hackathons, including Flipkart Runway Season 4, the Hacker-Ramp WeForShe initiative by Myntra, and the Design Impact Movement by Titan.
+
+I have a keen interest in research, demonstrated by my presentation of a paper titled "A Review on Advancement in Electric Vehicles" at the ICLTSET 2023 conference. I am driven by a passion for innovation and problem-solving and constantly seek opportunities to apply my skills in AI and data science to real-world challenges.
+                </p>
+            </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.jpg" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#skills'"/>
+    </section>
+    <section id="skills">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="skill-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="skill-sub-title">Problem Solving</h2>
+                    <div class="arcticle-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon"
+                            class="icon"/>
+                            <div>
+                                <h4>Python</h4>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon"
+                            class="icon"/>
+                            <div>
+                                <h4>Java</h4>
+                                <p>Beginner</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon"
+                            class="icon"/>
+                            <div>
+                                <h4>SQL</h4>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>        
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="skill-sub-title">Web Development</h2>
+                    <div class="arcticle-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon"
+                            class="icon"/>
+                            <div>
+                                <h4>HTML</h4>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon"
+                            class="icon"/>
+                            <div>
+                                <h4>CSS</h4>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon"
+                            class="icon"/>
+                            <div>
+                                <h4>JavaScript</h4>
+                                <p>Beginner</p>
+                            </div>
+                        </article>        
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="skill-sub-title">Machine Learning</h2>
+                    <div class="arcticle-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon"
+                            class="icon"/>
+                            <div>
+                                <h4>DEAP</h4>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon"
+                            class="icon"/>
+                            <div>
+                                <h4>K-Means Algorithm</h4>
+                                <p>Beginner</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon"
+                            class="icon"/>
+                            <div>
+                                <h4>Natural Language Processing</h4>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>      
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.jpg" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#projects'"/>
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="skill-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="arcticle-container">
+                <img src="./assets/vrp.jpg" alt="project 1"
+                class="project-img"/>
+            </div>
+            <h2 class="skill-sub-title project-title">Vehicle Routing Problem</h2>
+            <div class="btn-container">
+                <button class="btn btn-color-2 " onclick="location.href='https://github.com/ZiyaSherzeen/VRP'">Github</button>
+            </div>
+        </div>
+<div class="details-container color-container">
+    <div class="arcticle-container">
+    <img src="./assets/har.jpg" alt="project 2"
+    class="project-img"/>
+</div>
+<h2 class="skill-sub-title project-title">Human Activity Recognition</h2>
+<div class="btn-container">
+    <button class="btn btn-color-2" onclick="location.href='https://github.com/ZiyaSherzeen/Dimensionality-Reduction-Using-K-Means-for-Activity-Recognition'">Github</button>
+</div>
+</div>
+<div class="details-container color-container">
+    <div class="arcticle-container">
+    <img src="./assets/Market-Segmentation-600px.jpg" alt="project 3"
+    class="project-img"/>
+</div>
+<h2 class="skill-sub-title project-title">Market Segmentation</h2>
+<div class="btn-container">
+    <button class="btn btn-color-2 " onclick="location.href='https://github.com/ZiyaSherzeen/Market-Segmentation'">Github</button>
+</div>
+</div>
+<div class="details-container color-container">
+    <div class="arcticle-container">
+    <img src="./assets/ht.jpeg" alt="project 4"
+    class="project-img"/>
+</div>
+<h2 class="skill-sub-title project-title">HealthTech-AI driven Diabetes analysis</h2>
+<div class="btn-container">
+    <button class="btn btn-color-2 " onclick="location.href='https://github.com/ZiyaSherzeen/HealthTech'">Github</button>
+</div>
+</div>
+<div class="details-container color-container">
+    <div class="arcticle-container">
+    <img src="./assets/skillsync.jpg" alt="project 5"
+    class="project-img"/>
+</div>
+<h2 class="skill-sub-title project-title">SkillSync-Holistic Recruitment System</h2>
+<div class="btn-container">
+    <button class="btn btn-color-2"onclick="window.open('./assets/SkillSync.pdf')">Initial Stage</button>
+</div>
+</div>
+</div>
+</div>
+        <img src="./assets/arrow.jpg" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#contact'"/>
+    </section>
+    <section id="contact">
+         <p class="section__text__p1">Get in Touch</p>
+         <h1 class="title">Contact Me</h1>
+         <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/gmail.png" alt="Email icon" class="icon contact-icon"/>
+                <p><a href="mail to: zsherzeen@gmail.com">zsherzeen@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.jpg" alt="linkedIn icon" class="icon contact-icon"/>
+                <p><a href="https://www.linkedin.com/in/ziya-sherzeen/">LinkedIn</a></p>
+            </div>
+         </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Ziya Sherzeen.All rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>   
+</body>
+</html>
+ 
