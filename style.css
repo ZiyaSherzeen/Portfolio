@@ -72,7 +72,7 @@ a:hover{
     position: absolute;
     top:100%;
     right: 0;
-    background-color: wheat;
+    background-color: white;
     width: fit-content;
     max-height: 0;
     overflow: hidden;
@@ -161,8 +161,14 @@ section{
     border-radius: 2rem;
 }
 .icon{
+    padding-top: 4px;
     cursor: pointer;
-    height: 2rem;
+    height: 2.1rem;
+    border-radius: 3px;
+}
+.git-icon{
+    cursor: pointer;
+    height: 2.6rem;
 }
 .btn-container{
     display: flex;
@@ -278,7 +284,7 @@ article.icon{
 }
 .project-img{
     border-radius: 2rem;
-    width: 25%;
+    width: 50%;
     height: 25%;
 }
 .project-title{
