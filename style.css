@@ -231,14 +231,40 @@ section{
     right: -5rem;
     bottom:2.5rem;
 }
-.details-container{
-    padding: 1.5rem;
-    flex: 1;
-    background: white;
+.details-container{     
+    padding: 1.5rem;     
+    flex: 1;     
+    background: white;     
+    border-radius: 2rem;     
+    border:rgb(53,53,53) 0.1rem solid;     
+    border-color: rgb(163,163,163);     
+    text-align: center; 
+}
+.project-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card .arcticle-container {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-card .project-img {
+    width: 150px;
+    height: 90px;
+    object-fit: cover;
     border-radius: 2rem;
-    border:rgb(53,53,53) 0.1rem solid;
-    border-color: rgb(163,163,163);
-    text-align: center;
+}
+
+.project-card .project-title {
+    margin: 1rem 0;
+}
+
+.project-card .btn-container {
+    margin-top: auto;
 }
 .section-container{
     gap: 4rem;
