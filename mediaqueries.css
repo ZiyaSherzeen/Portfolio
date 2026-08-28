@@ -1,92 +1,306 @@
-@media screen and (max-width:1400px) {
-    #profile{
-        height: 83vh;
-        margin-bottom: 6rem;
-    }
-    .about-containers{
-        flex-wrap: wrap;
-    }
-}
+@media screen and (max-width: 1200px) {
 
-@media screen and (max-width:1200px) {
-    #desktop-nav{
+    /* Navigation */
+    #desktop-nav {
         display: none;
     }
-    #hamburger-nav{
+
+    #hamburger-nav {
         display: flex;
     }
-    #skills,.skill-details-container{
-        margin-top: 2rem;
-    }  
-    #profile,.section-container{
-        display: block;
-    }
-    .arrow{
-        display: none;
-    }
-    section, .section-container{
-        height: fit-content;
-    }
-    section{
-        margin: 0 5%;
-    }
-    .section__pic-container{
-        width: 275px;
-        height: 275px;
-        margin: 0 auto 2 rem;
-    }
-    .about-containers{
-        margin-top: 0;
-    }
-}
-@media screen and (max-width:1200px) {
-    #contact, footer{
-        height: 40vh;
-    }
-    #profile{
-        height: 83vh;
-        margin-bottom: 0;
-    }
-    article{
-        font-size: 1rem;
-    }
-    footer nav{
-        height: fit-content;
-        margin-bottom: 2rem;
-    }
-    .about-containers,.contact-info-upper-container,
-    .btn-container{
-        flex-wrap: wrap;
-    }
-    .contact-info-container{
-        margin: 0;
-    }
-    .contact-info-container p,.nav-links li a{
-        font-size: 1rem;
-    }
-    .skill sub-title{
-        font-size: 1.25rem;
-    }
-    .logo{
-        font-size: 1.5rem;
-    }
-    .nav-links{
+
+    .nav-links {
         flex-direction: column;
         gap: 0.5rem;
         text-align: center;
     }
-    .section__pic-container{
-        width: auto;
-        height: 46vw;
+
+    /* General sections */
+    section {
+        margin: 0 5%;
+        height: fit-content;
+    }
+
+    .section-container {
+        display: block;
+        height: fit-content;
+    }
+
+    /* Profile */
+    #profile {
+        display: block;
+        height: fit-content;
+        margin-bottom: 0;
+    }
+
+    .section__pic-container {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
         justify-content: center;
     }
-    .section__text__p2{
+
+    .section__text__p2 {
         font-size: 1.25rem;
     }
-    .title{
+
+    .title {
         font-size: 2rem;
     }
-    .text-container{
+
+    /* About */
+    .about-containers {
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+
+    /* Skills */
+    #skills,
+    .skill-details-container {
+        margin-top: 2rem;
+    }
+
+    .skill-sub-title {
+        font-size: 1.25rem;
+    }
+
+    article {
+        font-size: 1rem;
+    }
+
+    /* Projects */
+    .project-img {
+        width: 60%;
+        height: auto;
+    }
+
+    /* Achievements */
+    #achievements {
+        height: fit-content;
+        min-height: 80vh;
+    }
+
+    #achievements .achievements-container {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    #achievements .achievement-card {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    /* Contact */
+    #contact {
+        height: fit-content;
+        min-height: 50vh;
+    }
+
+    .contact-info-upper-container {
+        flex-wrap: wrap;
+    }
+
+    .contact-info-container {
+        margin: 0.5rem;
+    }
+
+    .contact-info-container p,
+    .nav-links li a {
+        font-size: 1rem;
+    }
+
+    /* Footer */
+    footer {
+        height: fit-content;
+        margin: 0 1rem;
+    }
+
+    footer nav {
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+
+    /* Misc */
+    .arrow {
+        display: none;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .text-container {
         text-align: justify;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media screen and (max-width: 600px) {
+
+    /* Navigation */
+    nav {
+        height: 12vh;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    /* General */
+    section {
+        margin: 0 1.5rem;
+        padding-top: 3vh;
+    }
+
+    /* Profile */
+    #profile {
+        min-height: 80vh;
+    }
+
+    .section__pic-container {
+        width: 220px;
+        height: 220px;
+        margin: 0 auto 2rem;
+    }
+
+    .section__text {
+        width: 100%;
+    }
+
+    .section__text__p2 {
+        font-size: 1.1rem;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    /* Buttons */
+    .btn {
+        width: 7rem;
+        padding: 0.8rem;
+    }
+
+    .btn-container {
+        gap: 0.7rem;
+    }
+
+    /* About */
+    .about-containers {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .details-container {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Skills */
+    .arcticle-container {
+        gap: 1.5rem;
+        justify-content: center;
+    }
+
+    .skill-sub-title {
+        font-size: 1.2rem;
+    }
+
+    /* Projects */
+    .about-containers {
+        gap: 1.5rem;
+    }
+
+    .project-img {
+        width: 70%;
+        height: auto;
+    }
+
+    .project-title {
+        font-size: 1.2rem;
+        margin: 1rem 0;
+    }
+
+    /* Achievements */
+    #achievements {
+        min-height: 80vh;
+        height: fit-content;
+    }
+
+    #achievements .achievements-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    #achievements .achievement-card {
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+        padding: 1.5rem;
+        box-sizing: border-box;
+    }
+
+    .achievement-icon {
+        width: 55px;
+        height: 55px;
+    }
+
+    #achievements .achievement-card h2 {
+        font-size: 1.2rem;
+    }
+
+    #achievements .achievement-card h3 {
+        font-size: 0.9rem;
+    }
+
+    #achievements .achievement-card p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    /* Contact */
+    #contact {
+        min-height: 60vh;
+        height: fit-content;
+    }
+
+    .contact-info-upper-container {
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contact-info-container {
+        margin: 0.5rem;
+    }
+
+    .contact-info-container p {
+        font-size: 0.85rem;
+    }
+
+    .email-icon {
+        height: 3rem;
+    }
+
+    /* Footer */
+    footer {
+        height: fit-content;
+    }
+
+    footer .nav-links {
+        gap: 0.8rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    #profile {
+        height: fit-content;
+        min-height: 0;
+        margin-bottom: 2rem;
     }
 }
